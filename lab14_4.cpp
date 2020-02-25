@@ -18,4 +18,30 @@ int main(){
 	return 0;
 }
 
-//Write definition of shuffle() here 
+//Write definition of shuffle() here
+
+void shuffle(int &ft,int &h,int &fh,int &t){
+	
+
+	
+	int w8[4]={ft,h,fh,t};
+	
+	for  (int i=0;i<4;i++){
+		
+		int r = rand()%4;
+		
+		int t = w8[r];
+		
+		w8[r]=w8[i];
+		
+		w8[i]=t;
+		 
+		
+	}
+	
+	ft = w8[0];
+	h = w8[1];
+	fh = w8[2];
+	t = w8[3];	
+
+}
